@@ -22,7 +22,7 @@ function AddClassroom({ refresh }) {
   const submit = async () => {
 
     await axios.post(
-      "http://localhost:5000/api/classrooms/add",
+      "https://exam-seat-planner-backend.onrender.com/api/classrooms/add",
       form
     );
 

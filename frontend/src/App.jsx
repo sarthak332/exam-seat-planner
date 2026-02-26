@@ -9,7 +9,7 @@ function App() {
   const [rooms,setRooms] = useState([]);
 
   const fetchRooms = async () => {
-    const res = await axios.get("http://localhost:5000/api/classrooms/all");
+    const res = await axios.get("https://exam-seat-planner-backend.onrender.com/api/classrooms/all");
     setRooms(res.data);
   };
 

@@ -7,7 +7,7 @@ function AllocateSeats() {
 
   const allocate = async () => {
     const res = await axios.post(
-      "http://localhost:5000/api/classrooms/allocate",
+      "https://exam-seat-planner-backend.onrender.com/api/classrooms/allocate",
       { totalStudents: Number(students) }
     );
 
